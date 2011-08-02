@@ -1,0 +1,3 @@
+<?php
+
+include_once('extension_staff_directory.features.inc');
