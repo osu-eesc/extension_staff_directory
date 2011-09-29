@@ -1,3 +1,10 @@
 <?php
 
 include_once('extension_staff_directory.features.inc');
+
+/**
+ * Implementation of hook_init().
+ */
+function extension_find_people_init() {
+  drupal_add_css(drupal_get_path('module', 'extension_staff_directory') .'/theme/extension_staff_directory.css');
+}

@@ -46,7 +46,7 @@ function extension_staff_directory_strongarm() {
     'revision_information' => '6',
     'author' => '5',
     'options' => '7',
-    'menu' => '3',
+    'menu' => '-1',
     'book' => '4',
     'path' => '10',
     'attachments' => '8',
@@ -81,10 +81,7 @@ function extension_staff_directory_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_staff_directory';
-  $strongarm->value = array(
-    0 => 'status',
-    1 => 'revision',
-  );
+  $strongarm->value = array();
   $export['node_options_staff_directory'] = $strongarm;
 
   $strongarm = new stdClass;

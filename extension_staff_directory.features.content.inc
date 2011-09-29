@@ -595,6 +595,72 @@ function extension_staff_directory_content_default_fields() {
     ),
   );
 
+  // Exported field: field_staff_email
+  $fields['staff_directory-field_staff_email'] = array(
+    'field_name' => 'field_staff_email',
+    'type_name' => 'staff_directory',
+    'display_settings' => array(
+      'label' => array(
+        'format' => 'above',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'text',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'text',
+    'active' => '1',
+    'text_processing' => '0',
+    'max_length' => '',
+    'allowed_values' => '',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'rows' => 5,
+      'size' => '60',
+      'default_value' => array(
+        '0' => array(
+          'value' => '',
+          '_error_element' => 'default_value_widget][field_staff_email][0][value',
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Staff email',
+      'weight' => '33',
+      'description' => '',
+      'type' => 'text_textfield',
+      'module' => 'text',
+    ),
+  );
+
   // Exported field: field_staff_employer
   $fields['staff_directory-field_staff_employer'] = array(
     'field_name' => 'field_staff_employer',
@@ -779,6 +845,72 @@ function extension_staff_directory_content_default_fields() {
     ),
   );
 
+  // Exported field: field_staff_name
+  $fields['staff_directory-field_staff_name'] = array(
+    'field_name' => 'field_staff_name',
+    'type_name' => 'staff_directory',
+    'display_settings' => array(
+      'label' => array(
+        'format' => 'above',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'text',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'text',
+    'active' => '1',
+    'text_processing' => '0',
+    'max_length' => '',
+    'allowed_values' => '',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'rows' => 5,
+      'size' => '60',
+      'default_value' => array(
+        '0' => array(
+          'value' => '',
+          '_error_element' => 'default_value_widget][field_staff_name][0][value',
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Staff name',
+      'weight' => '31',
+      'description' => '',
+      'type' => 'text_textfield',
+      'module' => 'text',
+    ),
+  );
+
   // Exported field: field_staff_phone
   $fields['staff_directory-field_staff_phone'] = array(
     'field_name' => 'field_staff_phone',
@@ -840,6 +972,72 @@ function extension_staff_directory_content_default_fields() {
       'default_value_php' => NULL,
       'label' => 'Staff phone',
       'weight' => 0,
+      'description' => '',
+      'type' => 'text_textfield',
+      'module' => 'text',
+    ),
+  );
+
+  // Exported field: field_staff_photo
+  $fields['staff_directory-field_staff_photo'] = array(
+    'field_name' => 'field_staff_photo',
+    'type_name' => 'staff_directory',
+    'display_settings' => array(
+      'label' => array(
+        'format' => 'above',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'text',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'text',
+    'active' => '1',
+    'text_processing' => '1',
+    'max_length' => '',
+    'allowed_values' => '',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'rows' => 5,
+      'size' => '60',
+      'default_value' => array(
+        '0' => array(
+          'value' => '',
+          '_error_element' => 'default_value_widget][field_staff_photo][0][value',
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Staff photo',
+      'weight' => '35',
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -980,9 +1178,12 @@ function extension_staff_directory_content_default_fields() {
   t('Fax Number');
   t('Geo Location');
   t('Phone Number');
+  t('Staff email');
   t('Staff first name');
   t('Staff last name');
+  t('Staff name');
   t('Staff phone');
+  t('Staff photo');
   t('Staff photo url');
   t('Staff title(s)');
   t('State');

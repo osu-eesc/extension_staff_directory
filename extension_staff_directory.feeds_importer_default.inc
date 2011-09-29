@@ -171,10 +171,8 @@ function extension_staff_directory_feeds_importer_default() {
         'context' => '//node/group',
         'exp' => array(
           'errors' => 1,
-          'tidy' => 0,
-          'tidy_encoding' => 'UTF8',
           'debug' => array(
-            'context' => 'context',
+            'context' => 0,
             'xpathparser:0' => 0,
             'xpathparser:1' => 0,
             'xpathparser:2' => 0,
@@ -255,6 +253,7 @@ function extension_staff_directory_feeds_importer_default() {
           ),
         ),
         'author' => '1',
+        'authorize' => 0,
       ),
     ),
     'content_type' => '',
