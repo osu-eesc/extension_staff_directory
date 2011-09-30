@@ -1,3 +1,8 @@
-div#view-id-staff_directory-page_1.view div.inner div.attachment div.view div.view-content div.openlayers-views-map {
+div.openlayers-container-preset-staff_directory_map,
+div.views-field-field-staff-photo-url-value {
   float: right;
+  margin-left: 10px;
+  background-color: #F1F1F1;
+  border: 1px solid #D2D2D2;
+  padding: 5px 5px 2px 5px;
 }

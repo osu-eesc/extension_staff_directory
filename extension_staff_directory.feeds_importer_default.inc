@@ -69,7 +69,7 @@ function extension_staff_directory_feeds_importer_default() {
         'content_type' => 'staff_directory',
         'input_format' => '2',
         'update_existing' => '1',
-        'expire' => '3600',
+        'expire' => '259200',
         'mappings' => array(
           0 => array(
             'source' => 'xpathparser:1',
@@ -194,7 +194,7 @@ function extension_staff_directory_feeds_importer_default() {
         'content_type' => 'group_location',
         'input_format' => '3',
         'update_existing' => '1',
-        'expire' => '-1',
+        'expire' => '259200',
         'mappings' => array(
           0 => array(
             'source' => 'xpathparser:0',
