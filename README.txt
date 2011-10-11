@@ -14,7 +14,7 @@ dependencies[] = "strongarm"
 dependencies[] = "text"
 dependencies[] = "views"
 
-Useage: After installing the URL for the twwo feeds needs to be entered.
+Useage: After installing the feature:
 
 go to  /import/faculty_staff_import and enter the following in the URL field
 http://extension.oregonstate.edu/employee/list/[replace with group nid]/xml
