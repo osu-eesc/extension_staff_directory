@@ -33,6 +33,7 @@ function extension_staff_directory_feeds_importer_default() {
           'xpathparser:9' => 'LastName',
           'xpathparser:10' => 'Photo',
           'xpathparser:11' => 'Employer',
+          'xpathparser:12' => 'Admin/Leader',
         ),
         'rawXML' => array(
           'xpathparser:1' => 0,
@@ -43,12 +44,11 @@ function extension_staff_directory_feeds_importer_default() {
           'xpathparser:9' => 0,
           'xpathparser:10' => 0,
           'xpathparser:11' => 0,
+          'xpathparser:12' => 0,
         ),
         'context' => '//node/employee',
         'exp' => array(
           'errors' => 1,
-          'tidy' => 0,
-          'tidy_encoding' => 'UTF8',
           'debug' => array(
             'context' => 0,
             'xpathparser:1' => 0,
@@ -59,6 +59,7 @@ function extension_staff_directory_feeds_importer_default() {
             'xpathparser:9' => 0,
             'xpathparser:10' => 0,
             'xpathparser:11' => 0,
+            'xpathparser:12' => 0,
           ),
         ),
       ),
@@ -109,6 +110,11 @@ function extension_staff_directory_feeds_importer_default() {
           7 => array(
             'source' => 'xpathparser:11',
             'target' => 'field_staff_employer',
+            'unique' => FALSE,
+          ),
+          8 => array(
+            'source' => 'xpathparser:12',
+            'target' => 'field_staff_leader',
             'unique' => FALSE,
           ),
         ),

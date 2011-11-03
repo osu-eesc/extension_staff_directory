@@ -377,6 +377,17 @@ function extension_staff_directory_views_default_views() {
     ),
   ));
   $handler->override_option('sorts', array(
+    'field_staff_leader_value' => array(
+      'order' => 'DESC',
+      'delta' => -1,
+      'id' => 'field_staff_leader_value',
+      'table' => 'node_data_field_staff_leader',
+      'field' => 'field_staff_leader_value',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
     'field_staff_lastname_value' => array(
       'order' => 'ASC',
       'delta' => -1,
@@ -391,17 +402,6 @@ function extension_staff_directory_views_default_views() {
       'id' => 'field_staff_firstname_value',
       'table' => 'node_data_field_staff_firstname',
       'field' => 'field_staff_firstname_value',
-      'relationship' => 'none',
-    ),
-    'field_staff_leader_value' => array(
-      'order' => 'DESC',
-      'delta' => -1,
-      'id' => 'field_staff_leader_value',
-      'table' => 'node_data_field_staff_leader',
-      'field' => 'field_staff_leader_value',
-      'override' => array(
-        'button' => 'Override',
-      ),
       'relationship' => 'none',
     ),
   ));
