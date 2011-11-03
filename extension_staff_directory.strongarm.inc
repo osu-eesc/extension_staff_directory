@@ -43,14 +43,14 @@ function extension_staff_directory_strongarm() {
   $strongarm->name = 'content_extra_weights_staff_directory';
   $strongarm->value = array(
     'title' => '-5',
-    'revision_information' => '6',
-    'author' => '5',
-    'options' => '7',
-    'menu' => '-1',
-    'book' => '4',
-    'path' => '10',
-    'attachments' => '8',
-    'path_redirect' => '9',
+    'revision_information' => '7',
+    'author' => '6',
+    'options' => '8',
+    'menu' => '0',
+    'book' => '5',
+    'path' => '11',
+    'attachments' => '9',
+    'path_redirect' => '10',
   );
   $export['content_extra_weights_staff_directory'] = $strongarm;
 

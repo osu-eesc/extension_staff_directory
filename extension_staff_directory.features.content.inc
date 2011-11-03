@@ -588,7 +588,7 @@ function extension_staff_directory_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'original nid',
-      'weight' => '2',
+      'weight' => '4',
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -654,7 +654,7 @@ function extension_staff_directory_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Staff email',
-      'weight' => '33',
+      'weight' => '13',
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -845,6 +845,72 @@ function extension_staff_directory_content_default_fields() {
     ),
   );
 
+  // Exported field: field_staff_leader
+  $fields['staff_directory-field_staff_leader'] = array(
+    'field_name' => 'field_staff_leader',
+    'type_name' => 'staff_directory',
+    'display_settings' => array(
+      'label' => array(
+        'format' => 'above',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'number_integer',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'number',
+    'active' => '1',
+    'prefix' => '',
+    'suffix' => '',
+    'min' => '',
+    'max' => '',
+    'allowed_values' => '0|No
+1|Administrator, Dept. Head, Unit Leader',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'default_value' => array(
+        '0' => array(
+          'value' => NULL,
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Admin/Leader',
+      'weight' => '3',
+      'description' => '',
+      'type' => 'optionwidgets_onoff',
+      'module' => 'optionwidgets',
+    ),
+  );
+
   // Exported field: field_staff_name
   $fields['staff_directory-field_staff_name'] = array(
     'field_name' => 'field_staff_name',
@@ -904,7 +970,7 @@ function extension_staff_directory_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Staff name',
-      'weight' => '31',
+      'weight' => '12',
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -971,7 +1037,7 @@ function extension_staff_directory_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Staff phone',
-      'weight' => 0,
+      'weight' => '1',
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -1037,7 +1103,7 @@ function extension_staff_directory_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Staff photo',
-      'weight' => '35',
+      'weight' => '14',
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -1096,7 +1162,7 @@ function extension_staff_directory_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Staff photo url',
-      'weight' => '1',
+      'weight' => '2',
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -1172,6 +1238,7 @@ function extension_staff_directory_content_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Admin/Leader');
   t('Business Hours');
   t('City');
   t('Employer');
