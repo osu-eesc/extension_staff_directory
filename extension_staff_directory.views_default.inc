@@ -1477,7 +1477,7 @@ function extension_staff_directory_views_default_views() {
   $handler->override_option('footer', ' <?php 
         $request_url = $_SERVER[\'SERVER_NAME\'] . $_SERVER[\'REQUEST_URI\'];
         $update_link = \'http://extension.oregonstate.edu/node/4823?update_type=group&request_url=\' . $request_url;
-        print \'<div class="update-link">Incorrect or outpdated information? <a href="\' . $update_link . \'">Let us know</a>. </div>\';
+        print \'<div class="update-link">Incorrect or outdated information? <a href="\' . $update_link . \'">Let us know</a>. </div>\';
       ?>');
   $handler->override_option('footer_format', '3');
   $handler->override_option('footer_empty', 0);
