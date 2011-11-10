@@ -1439,6 +1439,58 @@ function extension_staff_directory_views_default_views() {
     'page_1' => 'page_1',
     'default' => 0,
   ));
+  $handler = $view->new_display('attachment', 'Attachment', 'attachment_3');
+  $handler->override_option('fields', array(
+    'nothing_2' => array(
+      'label' => '',
+      'alter' => array(
+        'text' => ' ',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'exclude' => 0,
+      'id' => 'nothing_2',
+      'table' => 'views',
+      'field' => 'nothing',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+    ),
+  ));
+  $handler->override_option('sorts', array());
+  $handler->override_option('footer', ' <?php 
+        $request_url = $_SERVER[\'SERVER_NAME\'] . $_SERVER[\'REQUEST_URI\'];
+        $update_link = \'http://extension.oregonstate.edu/node/4823?update_type=group&request_url=\' . $request_url;
+        print \'<div class="update-link">Incorrect or outpdated information? <a href="\' . $update_link . \'">Let us know</a>. </div>\';
+      ?>');
+  $handler->override_option('footer_format', '3');
+  $handler->override_option('footer_empty', 0);
+  $handler->override_option('items_per_page', 1);
+  $handler->override_option('attachment_position', 'after');
+  $handler->override_option('inherit_arguments', TRUE);
+  $handler->override_option('inherit_exposed_filters', FALSE);
+  $handler->override_option('inherit_pager', FALSE);
+  $handler->override_option('render_pager', TRUE);
+  $handler->override_option('displays', array(
+    'page_1' => 'page_1',
+    'default' => 0,
+  ));
 
   $views[$view->name] = $view;
 

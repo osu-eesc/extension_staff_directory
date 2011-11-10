@@ -11,3 +11,8 @@ div#view-id-staff_directory-page_1.view div.views-field-title span.field-content
   color: #E48101;
   font-weight:  110%;
 }
+
+div.update-link {
+  margin-top: 2.0em;
+  text-align: right;
+}
