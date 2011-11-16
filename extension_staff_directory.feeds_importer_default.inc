@@ -33,7 +33,7 @@ function extension_staff_directory_feeds_importer_default() {
           'xpathparser:9' => 'LastName',
           'xpathparser:10' => 'Photo',
           'xpathparser:11' => 'Employer',
-          'xpathparser:12' => 'Admin/Leader',
+          'xpathparser:12' => 'AdminLeader',
         ),
         'rawXML' => array(
           'xpathparser:1' => 0,

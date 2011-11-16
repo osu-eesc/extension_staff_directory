@@ -1439,7 +1439,7 @@ function extension_staff_directory_views_default_views() {
     'page_1' => 'page_1',
     'default' => 0,
   ));
-  $handler = $view->new_display('attachment', 'Attachment', 'attachment_3');
+  $handler = $view->new_display('attachment', 'update link attachment', 'attachment_3');
   $handler->override_option('fields', array(
     'nothing_2' => array(
       'label' => '',

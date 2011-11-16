@@ -10,6 +10,7 @@ div.views-field-field-staff-photo-url-value {
 div#view-id-staff_directory-page_1.view div.views-field-title span.field-content a h3 {
   color: #E48101;
   font-weight:  110%;
+  padding-top: 0;
 }
 
 div.update-link {
