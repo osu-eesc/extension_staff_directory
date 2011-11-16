@@ -15,33 +15,25 @@ function extension_staff_directory_user_default_permissions() {
   // Exported permission: delete any staff_directory content
   $permissions['delete any staff_directory content'] = array(
     'name' => 'delete any staff_directory content',
-    'roles' => array(
-      '0' => 'site administrator',
-    ),
+    'roles' => array(),
   );
 
   // Exported permission: delete own staff_directory content
   $permissions['delete own staff_directory content'] = array(
     'name' => 'delete own staff_directory content',
-    'roles' => array(
-      '0' => 'site administrator',
-    ),
+    'roles' => array(),
   );
 
   // Exported permission: edit any staff_directory content
   $permissions['edit any staff_directory content'] = array(
     'name' => 'edit any staff_directory content',
-    'roles' => array(
-      '0' => 'site administrator',
-    ),
+    'roles' => array(),
   );
 
   // Exported permission: edit own staff_directory content
   $permissions['edit own staff_directory content'] = array(
     'name' => 'edit own staff_directory content',
-    'roles' => array(
-      '0' => 'site administrator',
-    ),
+    'roles' => array(),
   );
 
   return $permissions;
