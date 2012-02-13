@@ -7,6 +7,14 @@ div.views-field-field-staff-photo-url-value {
   padding: 5px 5px 2px 5px;
 }
 
+div.views-field-field-staff-photo-url-value {
+  margin-bottom: 10px;
+}
+
+#view-id-staff_directory-page_1.view div.attachment-before {
+  margin-bottom: 20px;
+}
+
 div#view-id-staff_directory-page_1.view div.views-field-title span.field-content a h3 {
   color: #E48101;
   font-weight:  110%;
