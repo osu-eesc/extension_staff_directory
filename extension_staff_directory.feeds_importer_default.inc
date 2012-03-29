@@ -62,6 +62,7 @@ function extension_staff_directory_feeds_importer_default() {
             'xpathparser:12' => 0,
           ),
         ),
+        'allow_override' => TRUE,
       ),
     ),
     'processor' => array(
@@ -69,8 +70,8 @@ function extension_staff_directory_feeds_importer_default() {
       'config' => array(
         'content_type' => 'staff_directory',
         'input_format' => '2',
-        'update_existing' => '1',
-        'expire' => '259200',
+        'update_existing' => '2',
+        'expire' => '2419200',
         'mappings' => array(
           0 => array(
             'source' => 'xpathparser:1',
@@ -192,15 +193,16 @@ function extension_staff_directory_feeds_importer_default() {
             'xpathparser:11' => 0,
           ),
         ),
+        'allow_override' => TRUE,
       ),
     ),
     'processor' => array(
       'plugin_key' => 'FeedsNodeProcessor',
       'config' => array(
         'content_type' => 'group_location',
-        'input_format' => '3',
-        'update_existing' => '1',
-        'expire' => '259200',
+        'input_format' => '2',
+        'update_existing' => '2',
+        'expire' => '-1',
         'mappings' => array(
           0 => array(
             'source' => 'xpathparser:0',
