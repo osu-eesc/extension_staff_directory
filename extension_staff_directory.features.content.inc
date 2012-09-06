@@ -541,7 +541,7 @@ function extension_staff_directory_content_default_fields() {
     'field_name' => 'field_org_nid',
     'type_name' => 'staff_directory',
     'display_settings' => array(
-      'weight' => '3',
+      'weight' => '4',
       'parent' => '',
       'label' => array(
         'format' => 'hidden',
@@ -600,19 +600,20 @@ function extension_staff_directory_content_default_fields() {
     'field_name' => 'field_staff_email',
     'type_name' => 'staff_directory',
     'display_settings' => array(
+      'weight' => '13',
+      'parent' => '',
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
       'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
@@ -666,19 +667,20 @@ function extension_staff_directory_content_default_fields() {
     'field_name' => 'field_staff_employer',
     'type_name' => 'staff_directory',
     'display_settings' => array(
+      'weight' => '-2',
+      'parent' => '',
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
       'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
@@ -732,7 +734,7 @@ function extension_staff_directory_content_default_fields() {
     'field_name' => 'field_staff_firstname',
     'type_name' => 'staff_directory',
     'display_settings' => array(
-      'weight' => '-3',
+      'weight' => '-4',
       'parent' => '',
       'label' => array(
         'format' => 'above',
@@ -791,7 +793,7 @@ function extension_staff_directory_content_default_fields() {
     'field_name' => 'field_staff_lastname',
     'type_name' => 'staff_directory',
     'display_settings' => array(
-      'weight' => '-2',
+      'weight' => '-3',
       'parent' => '',
       'label' => array(
         'format' => 'above',
@@ -850,19 +852,20 @@ function extension_staff_directory_content_default_fields() {
     'field_name' => 'field_staff_leader',
     'type_name' => 'staff_directory',
     'display_settings' => array(
+      'weight' => '3',
+      'parent' => '',
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       'full' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      '5' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
@@ -916,19 +919,20 @@ function extension_staff_directory_content_default_fields() {
     'field_name' => 'field_staff_name',
     'type_name' => 'staff_directory',
     'display_settings' => array(
+      'weight' => '12',
+      'parent' => '',
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
       'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
@@ -982,7 +986,7 @@ function extension_staff_directory_content_default_fields() {
     'field_name' => 'field_staff_phone',
     'type_name' => 'staff_directory',
     'display_settings' => array(
-      'weight' => 0,
+      'weight' => '1',
       'parent' => '',
       'label' => array(
         'format' => 'inline',
@@ -1049,19 +1053,20 @@ function extension_staff_directory_content_default_fields() {
     'field_name' => 'field_staff_photo',
     'type_name' => 'staff_directory',
     'display_settings' => array(
+      'weight' => '14',
+      'parent' => '',
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
       'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
         'format' => 'default',
         'exclude' => 0,
       ),
@@ -1115,7 +1120,7 @@ function extension_staff_directory_content_default_fields() {
     'field_name' => 'field_staff_photo_url',
     'type_name' => 'staff_directory',
     'display_settings' => array(
-      'weight' => '12',
+      'weight' => '2',
       'parent' => '',
       'label' => array(
         'format' => 'hidden',
@@ -1163,6 +1168,73 @@ function extension_staff_directory_content_default_fields() {
       'default_value_php' => NULL,
       'label' => 'Staff photo url',
       'weight' => '2',
+      'description' => '',
+      'type' => 'text_textfield',
+      'module' => 'text',
+    ),
+  );
+
+  // Exported field: field_staff_status
+  $fields['staff_directory-field_staff_status'] = array(
+    'field_name' => 'field_staff_status',
+    'type_name' => 'staff_directory',
+    'display_settings' => array(
+      'weight' => '15',
+      'parent' => '',
+      'label' => array(
+        'format' => 'above',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'text',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'text',
+    'active' => '1',
+    'text_processing' => '0',
+    'max_length' => '',
+    'allowed_values' => '',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'rows' => 5,
+      'size' => '60',
+      'default_value' => array(
+        '0' => array(
+          'value' => '',
+          '_error_element' => 'default_value_widget][field_staff_status][0][value',
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Staff Status',
+      'weight' => '15',
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -1245,6 +1317,7 @@ function extension_staff_directory_content_default_fields() {
   t('Fax Number');
   t('Geo Location');
   t('Phone Number');
+  t('Staff Status');
   t('Staff email');
   t('Staff first name');
   t('Staff last name');

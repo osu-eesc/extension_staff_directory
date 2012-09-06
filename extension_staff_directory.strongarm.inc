@@ -9,20 +9,6 @@ function extension_staff_directory_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'ant_pattern_staff_directory';
-  $strongarm->value = '[field_staff_firstname-raw] [field_staff_lastname-raw]';
-  $export['ant_pattern_staff_directory'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'ant_staff_directory';
-  $strongarm->value = '1';
-  $export['ant_staff_directory'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'content_extra_weights_group_location';
   $strongarm->value = array(
     'title' => '-5',
@@ -57,20 +43,6 @@ function extension_staff_directory_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'language_content_type_group_location';
-  $strongarm->value = '0';
-  $export['language_content_type_group_location'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'language_content_type_staff_directory';
-  $strongarm->value = '0';
-  $export['language_content_type_staff_directory'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_group_location';
   $strongarm->value = array(
     0 => 'revision',
@@ -88,22 +60,8 @@ function extension_staff_directory_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'openlayers_layers_google_api';
-  $strongarm->value = 'ABQIAAAAIb7ec2IktFVXT4wwpfF3ShRPlzMRScof2qFVYTJCg3FcHaADahTWXnV9n9EJAlub7GGjtS1aDaao8w';
+  $strongarm->value = 'ABQIAAAAwU-lZlpdmmTVUEjJZlqf7RQ1ocXlb2OV_6b3EO98BJY3HATC9hSNDCq2e4Ntea3aLAWGuh-fbYiQVw';
   $export['openlayers_layers_google_api'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_group_location_pattern';
-  $strongarm->value = 'node/[nid]';
-  $export['pathauto_node_group_location_pattern'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_staff_directory_pattern';
-  $strongarm->value = 'node/[nid]';
-  $export['pathauto_node_staff_directory_pattern'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

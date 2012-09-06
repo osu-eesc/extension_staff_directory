@@ -424,6 +424,22 @@ function extension_staff_directory_views_default_views() {
       'field' => 'type',
       'relationship' => 'none',
     ),
+    'field_staff_status_value' => array(
+      'operator' => '=',
+      'value' => 'Current Employee',
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+        'optional' => FALSE,
+      ),
+      'case' => 1,
+      'id' => 'field_staff_status_value',
+      'table' => 'node_data_field_staff_status',
+      'field' => 'field_staff_status_value',
+      'relationship' => 'none',
+    ),
   ));
   $handler->override_option('access', array(
     'type' => 'none',
@@ -439,6 +455,43 @@ function extension_staff_directory_views_default_views() {
     'grouping' => '',
   ));
   $handler = $view->new_display('page', 'Directory Page', 'page_1');
+  $handler->override_option('filters', array(
+    'type' => array(
+      'operator' => 'in',
+      'value' => array(
+        'staff_directory' => 'staff_directory',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'type',
+      'table' => 'node',
+      'field' => 'type',
+      'relationship' => 'none',
+    ),
+    'field_staff_status_value' => array(
+      'operator' => '=',
+      'value' => 'Current Employee',
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+        'optional' => FALSE,
+      ),
+      'case' => 1,
+      'id' => 'field_staff_status_value',
+      'table' => 'node_data_field_staff_status',
+      'field' => 'field_staff_status_value',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+    ),
+  ));
   $handler->override_option('path', 'staff-directory');
   $handler->override_option('menu', array(
     'type' => 'none',

@@ -34,6 +34,7 @@ function extension_staff_directory_feeds_importer_default() {
           'xpathparser:10' => 'Photo',
           'xpathparser:11' => 'Employer',
           'xpathparser:12' => 'AdminLeader',
+          'xpathparser:13' => 'Status',
         ),
         'rawXML' => array(
           'xpathparser:1' => 0,
@@ -45,6 +46,7 @@ function extension_staff_directory_feeds_importer_default() {
           'xpathparser:10' => 0,
           'xpathparser:11' => 0,
           'xpathparser:12' => 0,
+          'xpathparser:13' => 0,
         ),
         'context' => '//node/employee',
         'exp' => array(
@@ -60,9 +62,10 @@ function extension_staff_directory_feeds_importer_default() {
             'xpathparser:10' => 0,
             'xpathparser:11' => 0,
             'xpathparser:12' => 0,
+            'xpathparser:13' => 0,
           ),
         ),
-        'allow_override' => TRUE,
+        'allow_override' => 1,
       ),
     ),
     'processor' => array(
@@ -116,6 +119,11 @@ function extension_staff_directory_feeds_importer_default() {
           8 => array(
             'source' => 'xpathparser:12',
             'target' => 'field_staff_leader',
+            'unique' => FALSE,
+          ),
+          9 => array(
+            'source' => 'xpathparser:13',
+            'target' => 'field_staff_status',
             'unique' => FALSE,
           ),
         ),
