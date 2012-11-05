@@ -390,6 +390,21 @@ function extension_staff_directory_views_default_views() {
       ),
       'relationship' => 'none',
     ),
+    'field_staff_sticky_value' => array(
+      'order' => 'DESC',
+      'delta' => -1,
+      'id' => 'field_staff_sticky_value',
+      'table' => 'node_data_field_staff_sticky',
+      'field' => 'field_staff_sticky_value',
+      'relationship' => 'none',
+    ),
+    'sticky' => array(
+      'order' => 'DESC',
+      'id' => 'sticky',
+      'table' => 'node',
+      'field' => 'sticky',
+      'relationship' => 'none',
+    ),
     'field_staff_lastname_value' => array(
       'order' => 'ASC',
       'delta' => -1,
@@ -455,40 +470,42 @@ function extension_staff_directory_views_default_views() {
     'grouping' => '',
   ));
   $handler = $view->new_display('page', 'Directory Page', 'page_1');
-  $handler->override_option('filters', array(
-    'type' => array(
-      'operator' => 'in',
-      'value' => array(
-        'staff_directory' => 'staff_directory',
+  $handler->override_option('sorts', array(
+    'field_staff_leader_value' => array(
+      'order' => 'DESC',
+      'delta' => -1,
+      'id' => 'field_staff_leader_value',
+      'table' => 'node_data_field_staff_leader',
+      'field' => 'field_staff_leader_value',
+      'override' => array(
+        'button' => 'Override',
       ),
-      'group' => '0',
-      'exposed' => FALSE,
-      'expose' => array(
-        'operator' => FALSE,
-        'label' => '',
-      ),
-      'id' => 'type',
-      'table' => 'node',
-      'field' => 'type',
       'relationship' => 'none',
     ),
-    'field_staff_status_value' => array(
-      'operator' => '=',
-      'value' => 'Current Employee',
-      'group' => '0',
-      'exposed' => FALSE,
-      'expose' => array(
-        'operator' => FALSE,
-        'label' => '',
-        'optional' => FALSE,
-      ),
-      'case' => 1,
-      'id' => 'field_staff_status_value',
-      'table' => 'node_data_field_staff_status',
-      'field' => 'field_staff_status_value',
+    'sticky' => array(
+      'order' => 'DESC',
+      'id' => 'sticky',
+      'table' => 'node',
+      'field' => 'sticky',
       'override' => array(
         'button' => 'Use default',
       ),
+      'relationship' => 'none',
+    ),
+    'field_staff_lastname_value' => array(
+      'order' => 'ASC',
+      'delta' => -1,
+      'id' => 'field_staff_lastname_value',
+      'table' => 'node_data_field_staff_lastname',
+      'field' => 'field_staff_lastname_value',
+      'relationship' => 'none',
+    ),
+    'field_staff_firstname_value' => array(
+      'order' => 'ASC',
+      'delta' => -1,
+      'id' => 'field_staff_firstname_value',
+      'table' => 'node_data_field_staff_firstname',
+      'field' => 'field_staff_firstname_value',
       'relationship' => 'none',
     ),
   ));
@@ -1552,7 +1569,7 @@ function extension_staff_directory_views_default_views() {
         $update_link = \'http://extension.oregonstate.edu/node/4823?update_type=group&request_url=\' . $request_url;
         print \'<div class="update-link">Incorrect or outdated information? <a href="\' . $update_link . \'">Let us know</a>. </div>\';
       ?>');
-  $handler->override_option('footer_format', '3');
+  $handler->override_option('footer_format', '2');
   $handler->override_option('footer_empty', 0);
   $handler->override_option('items_per_page', 1);
   $handler->override_option('attachment_position', 'after');

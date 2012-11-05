@@ -588,7 +588,7 @@ function extension_staff_directory_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'original nid',
-      'weight' => '4',
+      'weight' => '5',
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -655,7 +655,7 @@ function extension_staff_directory_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Staff email',
-      'weight' => '13',
+      'weight' => '8',
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -907,7 +907,7 @@ function extension_staff_directory_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Admin/Leader',
-      'weight' => '3',
+      'weight' => '2',
       'description' => '',
       'type' => 'optionwidgets_onoff',
       'module' => 'optionwidgets',
@@ -974,7 +974,7 @@ function extension_staff_directory_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Staff name',
-      'weight' => '12',
+      'weight' => '6',
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -1041,7 +1041,7 @@ function extension_staff_directory_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Staff phone',
-      'weight' => '1',
+      'weight' => 0,
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -1108,7 +1108,7 @@ function extension_staff_directory_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Staff photo',
-      'weight' => '14',
+      'weight' => '7',
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -1167,7 +1167,7 @@ function extension_staff_directory_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Staff photo url',
-      'weight' => '2',
+      'weight' => '1',
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
@@ -1234,10 +1234,74 @@ function extension_staff_directory_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Staff Status',
-      'weight' => '15',
+      'weight' => '3',
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
+    ),
+  );
+
+  // Exported field: field_staff_sticky
+  $fields['staff_directory-field_staff_sticky'] = array(
+    'field_name' => 'field_staff_sticky',
+    'type_name' => 'staff_directory',
+    'display_settings' => array(
+      'label' => array(
+        'format' => 'above',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'text',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'text',
+    'active' => '1',
+    'text_processing' => '0',
+    'max_length' => '',
+    'allowed_values' => '0|No
+1|Sticky at top of list',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'default_value' => array(
+        '0' => array(
+          'value' => 0,
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Sticky at top of list',
+      'weight' => '4',
+      'description' => 'Use for manually changing the order of the listing on the staff page.',
+      'type' => 'optionwidgets_onoff',
+      'module' => 'optionwidgets',
     ),
   );
 
@@ -1327,6 +1391,7 @@ function extension_staff_directory_content_default_fields() {
   t('Staff photo url');
   t('Staff title(s)');
   t('State');
+  t('Sticky at top of list');
   t('Street ');
   t('ZIP Code');
   t('original nid');
