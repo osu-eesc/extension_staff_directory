@@ -60,7 +60,7 @@ function extension_staff_directory_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'openlayers_layers_google_api';
-  $strongarm->value = 'ABQIAAAAwU-lZlpdmmTVUEjJZlqf7RQ1ocXlb2OV_6b3EO98BJY3HATC9hSNDCq2e4Ntea3aLAWGuh-fbYiQVw';
+  $strongarm->value = 'ABQIAAAAIb7ec2IktFVXT4wwpfF3ShRPlzMRScof2qFVYTJCg3FcHaADahTWXnV9n9EJAlub7GGjtS1aDaao8w';
   $export['openlayers_layers_google_api'] = $strongarm;
 
   $strongarm = new stdClass;
