@@ -1520,6 +1520,7 @@ function extension_staff_directory_views_default_views() {
     ),
   ));
   $handler->override_option('css_class', 'clearfix');
+  $handler->override_option('items_per_page', 1);
   $handler->override_option('attachment_position', 'before');
   $handler->override_option('inherit_arguments', TRUE);
   $handler->override_option('inherit_exposed_filters', FALSE);
