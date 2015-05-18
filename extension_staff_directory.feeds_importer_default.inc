@@ -34,8 +34,8 @@ function extension_staff_directory_feeds_importer_default() {
           'xpathparser:10' => 'Photo',
           'xpathparser:11' => 'Employer',
           'xpathparser:12' => 'AdminLeader',
-          'xpathparser:13' => 'Status',
-          'xpathparser:14' => 'Sticky',
+          'xpathparser:13' => 'Sticky',
+          'xpathparser:14' => 'Status',
         ),
         'rawXML' => array(
           'xpathparser:1' => 0,
@@ -53,6 +53,8 @@ function extension_staff_directory_feeds_importer_default() {
         'context' => '//node/employee',
         'exp' => array(
           'errors' => 1,
+          'tidy' => 0,
+          'tidy_encoding' => 'UTF8',
           'debug' => array(
             'context' => 0,
             'xpathparser:1' => 0,
@@ -68,7 +70,7 @@ function extension_staff_directory_feeds_importer_default() {
             'xpathparser:14' => 0,
           ),
         ),
-        'allow_override' => 0,
+        'allow_override' => 1,
       ),
     ),
     'processor' => array(
@@ -77,7 +79,7 @@ function extension_staff_directory_feeds_importer_default() {
         'content_type' => 'staff_directory',
         'input_format' => '2',
         'update_existing' => '2',
-        'expire' => '2419200',
+        'expire' => '-1',
         'mappings' => array(
           0 => array(
             'source' => 'xpathparser:1',
@@ -126,12 +128,12 @@ function extension_staff_directory_feeds_importer_default() {
           ),
           9 => array(
             'source' => 'xpathparser:13',
-            'target' => 'field_staff_status',
+            'target' => 'field_staff_sticky',
             'unique' => FALSE,
           ),
           10 => array(
             'source' => 'xpathparser:14',
-            'target' => 'field_staff_sticky',
+            'target' => 'field_staff_status',
             'unique' => FALSE,
           ),
         ),
@@ -216,9 +218,9 @@ function extension_staff_directory_feeds_importer_default() {
       'plugin_key' => 'FeedsNodeProcessor',
       'config' => array(
         'content_type' => 'group_location',
-        'input_format' => '2',
-        'update_existing' => '2',
-        'expire' => '-1',
+        'input_format' => '3',
+        'update_existing' => '1',
+        'expire' => '2419200',
         'mappings' => array(
           0 => array(
             'source' => 'xpathparser:0',

@@ -1287,8 +1287,8 @@ function extension_staff_directory_content_default_fields() {
     'active' => '1',
     'text_processing' => '0',
     'max_length' => '',
-    'allowed_values' => '0|No
-1|Sticky at top of list',
+    'allowed_values' => 'No|No
+Yes|Sticky at top of list',
     'allowed_values_php' => '',
     'widget' => array(
       'default_value' => array(
