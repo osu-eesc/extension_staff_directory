@@ -52,7 +52,7 @@ function extension_staff_directory_feeds_importer_default() {
         ),
         'context' => '//node/employee',
         'exp' => array(
-          'errors' => 1,
+          'errors' => 0,
           'tidy' => 0,
           'tidy_encoding' => 'UTF8',
           'debug' => array(
@@ -70,7 +70,7 @@ function extension_staff_directory_feeds_importer_default() {
             'xpathparser:14' => 0,
           ),
         ),
-        'allow_override' => 1,
+        'allow_override' => 0,
       ),
     ),
     'processor' => array(
@@ -143,9 +143,9 @@ function extension_staff_directory_feeds_importer_default() {
     ),
     'content_type' => '',
     'update' => 0,
-    'import_period' => 1800,
+    'import_period' => '3600',
     'expire_period' => 3600,
-    'import_on_create' => TRUE,
+    'import_on_create' => 1,
   );
   $export['faculty_staff_import'] = $feeds_importer;
 
@@ -196,6 +196,8 @@ function extension_staff_directory_feeds_importer_default() {
         'context' => '//node/group',
         'exp' => array(
           'errors' => 1,
+          'tidy' => 0,
+          'tidy_encoding' => 'UTF8',
           'debug' => array(
             'context' => 0,
             'xpathparser:0' => 0,
@@ -211,7 +213,7 @@ function extension_staff_directory_feeds_importer_default() {
             'xpathparser:11' => 0,
           ),
         ),
-        'allow_override' => TRUE,
+        'allow_override' => 0,
       ),
     ),
     'processor' => array(
@@ -219,8 +221,8 @@ function extension_staff_directory_feeds_importer_default() {
       'config' => array(
         'content_type' => 'group_location',
         'input_format' => '3',
-        'update_existing' => '1',
-        'expire' => '2419200',
+        'update_existing' => '2',
+        'expire' => '-1',
         'mappings' => array(
           0 => array(
             'source' => 'xpathparser:0',
@@ -284,9 +286,9 @@ function extension_staff_directory_feeds_importer_default() {
     ),
     'content_type' => '',
     'update' => 0,
-    'import_period' => 1800,
+    'import_period' => '43200',
     'expire_period' => 3600,
-    'import_on_create' => TRUE,
+    'import_on_create' => 1,
   );
   $export['group_location_import'] = $feeds_importer;
 
